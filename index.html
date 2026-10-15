@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Irénée Mahutin ATISSOUSSI - Réseaux, Télécommunications, Systèmes et Cloud." />
+  <title>Irénée ATISSOUSSI | Ingénieur Réseaux & Télécommunications</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Fond réseau animé -->
+  <canvas id="network-bg" aria-hidden="true"></canvas>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#accueil" aria-label="Retour à l'accueil">
+        <span class="brand-mark">I</span>
+        <span class="brand-text">IRÉNÉE ATISSOUSSI</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a class="nav-link active" href="#accueil">Accueil</a>
+        <a class="nav-link" href="#profil">Profil</a>
+        <a class="nav-link" href="#competences">Compétences</a>
+        <a class="nav-link" href="#projets">Projets</a>
+        <a class="nav-link" href="#parcours">Parcours</a>
+        <a class="btn btn-primary btn-small" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== ACCUEIL ===================== -->
+    <section id="accueil" class="hero section">
+      <div class="container hero-grid">
+
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Réseaux · Télécommunications · Systèmes</div>
+
+          <h1>
+            IRÉNÉE MAHUTIN
+            <span>ATISSOUSSI</span>
+          </h1>
+
+          <h2>Ingénieur Réseaux & Télécommunications</h2>
+
+          <p class="hero-highlight">
+            Ingénieur Réseaux & Télécommunications, diplômé d’un Master en
+            Télécommunications & Multimédia, orienté infrastructures IP,
+            systèmes, sécurité et architectures télécoms modernes.
+          </p>
+
+          <p class="hero-text">
+            Je conçois, configure et teste des environnements réseaux et télécoms
+            à travers des projets pratiques : services réseau, routage, MPLS,
+            sécurité, VoIP/ToIP, QoS, cloud, streaming et environnements Linux.
+            J’ai également effectué un stage à l’ASECNA au sein de la
+            DTI/CNS - cellule Communication.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span>Me contacter</span>
+              <span class="btn-icon">→</span>
+            </a>
+
+            <a href="#profil" class="btn btn-secondary">
+              <span class="code-icon">&lt;/&gt;</span>
+              <span>Découvrir mon profil</span>
+            </a>
+
+            <a href="assets/cv/CV-Irenee-ATISSOUSSI.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
+              <span class="download-icon">↓</span>
+              <span>CV</span>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span>📍 Dakar, Sénégal</span>
+            <span>•</span>
+            <span>Ingénieur Réseaux & Télécommunications</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <div class="portrait-card">
+            <div class="portrait-glow"></div>
+
+            <!--
+              Pour mettre ta photo :
+              1. place-la dans assets/images/
+              2. nomme-la profile.jpg
+              3. recharge la page
+            -->
+            <img
+              src="assets/images/profile.jpg"
+              alt="Portrait de Irénée Mahutin ATISSOUSSI"
+              class="portrait"
+              id="profileImage"
+            />
+
+            <div class="portrait-fallback" id="portraitFallback">
+              <span>IMA</span>
+              <small>Ajoute ta photo dans<br>assets/images/profile.jpg</small>
+            </div>
+
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              Portfolio en construction
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="scroll-indicator" href="#profil" aria-label="Aller à la section profil">
+        <span></span>
+      </a>
+    </section>
+
+
+    <!-- ===================== PROFIL ===================== -->
+    <section id="profil" class="profile-section section">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-kicker">01 · Profil</span>
+          <h2>À propos de moi</h2>
+        </div>
+
+        <div class="profile-grid">
+
+          <aside class="stats-card reveal">
+            <div class="stat">
+              <strong>Diplômé</strong>
+              <span>Master Télécommunications & Multimédia (2024-2026)</span>
+            </div>
+
+            <div class="stat">
+              <strong>8</strong>
+              <span>projets techniques documentés</span>
+            </div>
+
+            <div class="stat">
+              <strong>7</strong>
+              <span>domaines techniques explorés</span>
+            </div>
+
+            <div class="stat">
+              <strong>Linux</strong>
+              <span>environnement central de plusieurs labs</span>
+            </div>
+          </aside>
+
+          <div class="profile-content reveal delay-1">
+            <p>
+              <strong>Ingénieur Réseaux & Télécommunications</strong>, diplômé d’un
+              Master en Télécommunications & Multimédia, je développe mes compétences
+              autour des réseaux IP, des systèmes Linux, des services réseau, de la
+              sécurité, du cloud et des architectures télécoms modernes.
+            </p>
+
+            <p>
+              Mon approche est principalement pratique : je construis des maquettes,
+              configure des équipements et services, réalise des tests de connectivité,
+              analyse les flux et documente les résultats obtenus.
+            </p>
+
+            <p>
+              De <strong>juin 2026 à octobre 2026</strong>, j’ai effectué un stage à
+              l’<strong>ASECNA</strong>, au sein de la <strong>Direction Technique et Informatique (DTI)</strong>, dans le domaine <strong>CNS - Communication, Navigation et Surveillance</strong>, au niveau de la <strong>cellule Communication</strong>.
+            </p>
+
+            <p>
+              Mes projets couvrent notamment la <strong>messagerie XMPP avec Openfire et OpenLDAP</strong>,
+              le <strong>DHCP et DHCP Relay</strong>, les architectures <strong>MPLS</strong>,
+              la sécurité VoIP, <strong>GETVPN</strong>, le cloud AWS,
+              le streaming HLS ainsi que la <strong>VoIP/ToIP et la QoS des flux RTP</strong>.
+            </p>
+
+            <div class="tags">
+              <span>Réseaux TCP/IP</span>
+              <span>Linux</span>
+              <span>MPLS</span>
+              <span>Services Réseau</span>
+              <span>Cloud</span>
+              <span>Cybersécurité</span>
+              <span>VoIP / ToIP</span>
+              <span>QoS / RTP</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- ===================== COMPÉTENCES ===================== -->
+    <section id="competences" class="skills-section section">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-kicker">02 · Compétences</span>
+          <h2>Compétences techniques</h2>
+          <p class="section-intro">
+            Compétences issues des projets réalisés durant mon parcours en
+            Réseaux, Télécommunications et Multimédia.
+          </p>
+        </div>
+
+        <div class="skill-grid">
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">⇄</div>
+            <h3>Réseaux IP & Services</h3>
+            <p>Adressage IPv4, DHCP, DHCP Relay, routage et services client/serveur.</p>
+            <div class="skill-tags">
+              <span>IPv4</span><span>DHCP</span><span>DHCP Relay</span><span>Subnetting</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-1">
+            <div class="skill-icon">◇</div>
+            <h3>Routage & MPLS</h3>
+            <p>Backbone opérateur, routage dynamique, VPN L3 et interconnexion multi-sites.</p>
+            <div class="skill-tags">
+              <span>OSPF</span><span>MPLS</span><span>LDP</span><span>VRF</span><span>MP-BGP</span><span>NAT</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">◎</div>
+            <h3>Linux & Services Réseau</h3>
+            <p>Administration Ubuntu et déploiement de services réseau applicatifs.</p>
+            <div class="skill-tags">
+              <span>Ubuntu</span><span>OpenLDAP</span><span>Openfire</span><span>XMPP</span><span>Gajim</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-1">
+            <div class="skill-icon">◉</div>
+            <h3>Cybersécurité réseau & VoIP</h3>
+            <p>Détection, analyse et réaction face aux attaques réseau et SIP.</p>
+            <div class="skill-tags">
+              <span>Asterisk</span><span>Wazuh</span><span>Fail2ban</span><span>SIPVicious</span><span>Grafana</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">⌁</div>
+            <h3>VPN & Chiffrement</h3>
+            <p>Sécurisation des communications inter-sites avec GETVPN et IPsec.</p>
+            <div class="skill-tags">
+              <span>GETVPN</span><span>IPsec</span><span>ESP</span><span>GDOI</span><span>IKE</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-1">
+            <div class="skill-icon">☁</div>
+            <h3>Cloud AWS</h3>
+            <p>Construction d’une architecture AWS segmentée pour une application web.</p>
+            <div class="skill-tags">
+              <span>VPC</span><span>EC2</span><span>RDS</span><span>S3</span><span>IAM</span><span>Security Groups</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">▶</div>
+            <h3>Multimédia sur IP</h3>
+            <p>Génération, diffusion et analyse réseau d’un flux vidéo HLS adaptatif.</p>
+            <div class="skill-tags">
+              <span>HLS</span><span>FFmpeg</span><span>HTTP</span><span>Wireshark</span><span>H.264</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal delay-1">
+            <div class="skill-icon">☎</div>
+            <h3>VoIP / ToIP & QoS</h3>
+            <p>Configuration de services téléphoniques IP, analyse RTP, codecs, QoS et interopérabilité multi-protocoles.</p>
+            <div class="skill-tags">
+              <span>Asterisk</span><span>SIP</span><span>PJSIP</span><span>IAX</span><span>SCCP</span><span>RTP</span><span>QoS</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ===================== PROJETS ===================== -->
+    <section id="projets" class="projects-section section">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-kicker">03 · Projets</span>
+          <h2>Mes projets techniques</h2>
+          <p class="section-intro">
+            Huit projets sélectionnés et documentés, classés par domaine.
+            Cliquez sur un projet pour consulter l’architecture, les étapes,
+            les technologies et les résultats.
+          </p>
+        </div>
+
+        <!-- ===== 01 SERVICES RÉSEAUX ===== -->
+        <div class="subject-header reveal">
+          <div>
+            <span class="subject-number">Domaine 01</span>
+            <h3>Services Réseaux</h3>
+          </div>
+          <span class="subject-count">2 projets</span>
+        </div>
+
+        <div class="project-grid subject-projects">
+          <article class="project-card reveal">
+            <div class="project-visual">
+              <img src="assets/projects/openfire-architecture.png" alt="Architecture Openfire et OpenLDAP" />
+              <span class="project-category">Services Réseaux</span>
+            </div>
+            <div class="project-body">
+<h3>Messagerie Openfire & OpenLDAP</h3>
+              <p>Messagerie XMPP sous Ubuntu avec gestion centralisée des utilisateurs via LDAP.</p>
+              <div class="project-stack">
+                <span>Ubuntu</span><span>OpenLDAP</span><span>Openfire</span><span>XMPP</span><span>Gajim</span>
+              </div>
+              <button class="project-link" data-modal="modal-openfire">Voir le projet <span>→</span></button>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="project-visual">
+              <img src="assets/projects/dhcp-architecture.jpg" alt="Architecture DHCP Relay" />
+              <span class="project-category">Services Réseaux</span>
+            </div>
+            <div class="project-body">
+<h3>Serveur DHCP & DHCP Relay</h3>
+              <p>Attribution dynamique d’adresses IP à travers plusieurs sous-réseaux via un relais DHCP.</p>
+              <div class="project-stack">
+                <span>Ubuntu</span><span>DHCP</span><span>DHCP Relay</span><span>IPv4</span><span>tcpdump</span>
+              </div>
+              <button class="project-link" data-modal="modal-dhcp">Voir le projet <span>→</span></button>
+            </div>
+          </article>
+        </div>
+
+        <!-- ===== 02 MPLS ===== -->
+        <div class="subject-header reveal project-subject-gap">
+          <div>
+            <span class="subject-number">Domaine 02</span>
+            <h3>Réseaux opérateurs & MPLS</h3>
+          </div>
+          <span class="subject-count">1 projet</span>
+        </div>
+
+        <div class="project-grid single-project subject-projects">
+          <article class="project-card reveal">
+            <div class="project-visual">
+              <img src="assets/projects/mpls-architecture.png" alt="Architecture du projet MPLS" />
+              <span class="project-category">MPLS / Routage</span>
+            </div>
+            <div class="project-body">
+<h3>VPN MPLS Hub-and-Spoke & accès Internet centralisé</h3>
+              <p>Interconnexion d’un siège et de deux agences via un backbone IP/MPLS, VPN L3, MP-BGP et NAT.</p>
+              <div class="project-stack">
+                <span>OSPF</span><span>MPLS</span><span>LDP</span><span>VRF</span><span>MP-BGP</span><span>NAT</span>
+              </div>
+              <button class="project-link" data-modal="modal-mpls">Voir le projet <span>→</span></button>
+            </div>
+          </article>
+        </div>
+
+        <!-- ===== 03 CYBERSÉCURITÉ ===== -->
+        <div class="subject-header reveal project-subject-gap">
+          <div>
+            <span class="subject-number">Domaine 03</span>
+            <h3>Cybersécurité & Sécurité Réseau</h3>
+          </div>
+          <span class="subject-count">2 projets</span>
+        </div>
+
+        <div class="project-grid subject-projects">
+          <article class="project-card reveal">
+            <div class="project-visual">
+              <img src="assets/projects/sip-architecture.png" alt="Architecture de détection et réponse aux attaques SIP" />
+              <span class="project-category">Sécurité VoIP</span>
+            </div>
+            <div class="project-body">
+<h3>Détection & réponse aux attaques SIP</h3>
+              <p>Simulation d’attaques SIP sur Asterisk, détection Wazuh, blocage Fail2ban et visualisation Grafana.</p>
+              <div class="project-stack">
+                <span>Asterisk</span><span>SIPVicious</span><span>Wazuh</span><span>Fail2ban</span><span>Grafana</span>
+              </div>
+              <button class="project-link" data-modal="modal-sip">Voir le projet <span>→</span></button>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="project-visual">
+              <img src="assets/projects/getvpn-lab.png" alt="Maquette GETVPN" />
+              <span class="project-category">Sécurité Réseau</span>
+            </div>
+            <div class="project-body">
+<h3>Sécurisation inter-sites avec GETVPN</h3>
+              <p>Chiffrement de groupe pour un réseau multi-sites sans tunnels IPsec point-à-point.</p>
+              <div class="project-stack">
+                <span>GETVPN</span><span>IPsec</span><span>ESP</span><span>GDOI</span><span>IKE</span><span>Wireshark</span>
+              </div>
+              <button class="project-link" data-modal="modal-getvpn">Voir le projet <span>→</span></button>
+            </div>
+          </article>
+        </div>
+
+        <!-- ===== 04 CLOUD ===== -->
+        <div class="subject-header reveal project-subject-gap">
+          <div>
+            <span class="subject-number">Domaine 04</span>
+            <h3>Cloud Computing</h3>
+          </div>
+          <span class="subject-count">1 projet</span>
+        </div>
+
+        <div class="project-grid single-project subject-projects">
+          <article class="project-card reveal">
+            <div class="project-visual">
+              <img src="assets/projects/aws-architecture.png" alt="Architecture Cloud AWS SmartSchool" />
+              <span class="project-category">AWS Cloud</span>
+            </div>
+            <div class="project-body">
+<h3>Architecture Cloud AWS - SmartSchool</h3>
+              <p>VPC segmentée avec subnet public/privé, serveur web EC2, base RDS privée et contrôle d’accès.</p>
+              <div class="project-stack">
+                <span>AWS</span><span>VPC</span><span>EC2</span><span>RDS</span><span>S3</span><span>IAM</span>
+              </div>
+              <button class="project-link" data-modal="modal-aws">Voir le projet <span>→</span></button>
+            </div>
+          </article>
+        </div>
+
+        <!-- ===== 05 MULTIMÉDIA ===== -->
+        <div class="subject-header reveal project-subject-gap">
+          <div>
+            <span class="subject-number">Domaine 05</span>
+            <h3>Multimédia sur IP</h3>
+          </div>
+          <span class="subject-count">1 projet</span>
+        </div>
+
+        <div class="project-grid single-project subject-projects">
+          <article class="project-card reveal">
+            <div class="project-visual">
+              <img src="assets/projects/hls-cover.jpg" alt="Illustration du projet Streaming HLS" />
+              <span class="project-category">Streaming HLS</span>
+            </div>
+            <div class="project-body">
+<h3>Streaming adaptatif HTTP Live Streaming</h3>
+              <p>Encodage multi-bitrate, segmentation HLS, lecture réseau et analyse des échanges HTTP avec Wireshark.</p>
+              <div class="project-stack">
+                <span>HLS</span><span>FFmpeg</span><span>H.264</span><span>HTTP</span><span>Wireshark</span>
+              </div>
+              <button class="project-link" data-modal="modal-hls">Voir le projet <span>→</span></button>
+            </div>
+          </article>
+        </div>
+
+        <!-- ===== 06 VOIP TOIP ===== -->
+        <div class="subject-header reveal project-subject-gap">
+          <div>
+            <span class="subject-number">Domaine 06</span>
+            <h3>VoIP / ToIP & Qualité de Service</h3>
+          </div>
+          <span class="subject-count">1 projet</span>
+        </div>
+
+        <div class="project-grid single-project subject-projects">
+          <article class="project-card reveal">
+            <div class="project-visual">
+              <img src="assets/projects/voip-toip-architecture.png"
+                   alt="Architecture VoIP ToIP avec Asterisk, routeur Cisco et UC560" />
+              <span class="project-category">VoIP / ToIP / QoS</span>
+            </div>
+
+            <div class="project-body">
+              <h3>Architecture VoIP/ToIP, QoS & interopérabilité Asterisk</h3>
+
+              <p>
+                Mise en œuvre de services ToIP avancés, analyse de la QoS des flux RTP
+                et interconnexion de serveurs Asterisk avec un routeur Cisco et plusieurs protocoles de signalisation.
+              </p>
+
+              <div class="project-stack">
+                <span>Asterisk</span><span>SIP</span><span>PJSIP</span><span>IAX</span>
+                <span>SCCP</span><span>RTP</span><span>QoS</span><span>Wireshark</span>
+              </div>
+
+              <button class="project-link" data-modal="modal-voiptoip">
+                Voir le projet <span>→</span>
+              </button>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================== PARCOURS ===================== -->
+    <section id="parcours" class="journey-section section">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="section-kicker">04 · Parcours</span>
+          <h2>Formation & expérience</h2>
+          <p class="section-intro">
+            Un parcours construit autour des réseaux, des télécommunications
+            et de la mise en pratique sur des environnements techniques réels.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-date">2024</div>
+
+            <div class="timeline-card">
+              <span class="timeline-type">Formation</span>
+              <h3>Licence en Mathématiques et Informatique Appliquées</h3>
+              <p class="timeline-place">Diplôme obtenu en 2024</p>
+              <p>
+                Formation scientifique combinant mathématiques, informatique
+                et méthodes d’analyse appliquées.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-date">2024 - 2026</div>
+
+            <div class="timeline-card">
+              <span class="timeline-type">Formation</span>
+              <h3>Master Télécommunications & Multimédia</h3>
+              <p class="timeline-place">École Supérieure Multinationale des Télécommunications (ESMT)</p>
+              <p>
+                Diplôme obtenu et soutenu. Formation orientée réseaux IP,
+                télécommunications, services réseau, sécurité, cloud,
+                multimédia, VoIP/ToIP, QoS et réseaux IP.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal delay-1">
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-date">Juin 2026 - Octobre 2026</div>
+
+            <div class="timeline-card">
+              <span class="timeline-type">Stage</span>
+              <h3>ASECNA</h3>
+              <p class="timeline-place">Direction Technique et Informatique (DTI) - CNS : Communication, Navigation et Surveillance - Cellule Communication</p>
+              <p>
+                Stage réalisé au sein de la Direction Technique et Informatique (DTI),
+                dans le domaine CNS (Communication, Navigation et Surveillance),
+                plus particulièrement au niveau de la cellule Communication.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== CONTACT SIMPLE ===================== -->
+    <section id="contact" class="contact-section section">
+      <div class="container contact-card reveal">
+        <div>
+          <span class="section-kicker">Contact</span>
+          <h2>Échangeons</h2>
+          <p>
+            Les liens définitifs seront ajoutés lorsque nous intégrerons ton CV,
+            ton LinkedIn, GitHub et tes coordonnées.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:ton-email@example.com">Email</a>
+          <a class="btn btn-secondary" href="#" aria-disabled="true">LinkedIn</a>
+          <a class="btn btn-secondary" href="#" aria-disabled="true">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Irénée Mahutin ATISSOUSSI - Ingénieur Réseaux & Télécommunications</p>
+    </div>
+  </footer>
+
+  <a href="#accueil" class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</a>
+
+
+
+  <!-- ===================== MODAL OPENFIRE / LDAP ===================== -->
+  <div class="project-modal" id="modal-openfire" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="openfire-title">
+      <button class="modal-close" data-close-modal aria-label="Fermer">×</button>
+
+      <div class="modal-head">
+        <span class="project-category">Services Réseaux</span>
+        <h2 id="openfire-title">Messagerie instantanée avec Openfire & OpenLDAP</h2>
+        <p>
+          Mise en place d’une solution de communication interne avec gestion
+          centralisée des comptes utilisateurs.
+        </p>
+      </div>
+
+      <div class="modal-content">
+
+        <section class="modal-block">
+          <h3>Objectif</h3>
+          <p>
+            Mettre en place une messagerie instantanée locale permettant à des
+            utilisateurs gérés dans un annuaire LDAP de s’authentifier puis
+            d’échanger des messages en temps réel via XMPP.
+          </p>
+        </section>
+
+        <section class="modal-block">
+          <h3>Architecture</h3>
+
+          <div class="architecture-flow">
+            <div class="arch-node">
+              <span>Serveur Ubuntu</span>
+              <strong>OpenLDAP</strong>
+              <small>Gestion centralisée des utilisateurs</small>
+            </div>
+
+            <div class="arch-arrow">→</div>
+
+            <div class="arch-node">
+              <span>Serveur Ubuntu</span>
+              <strong>Openfire</strong>
+              <small>Serveur de messagerie XMPP</small>
+            </div>
+
+            <div class="arch-arrow">→</div>
+
+            <div class="arch-node">
+              <span>Client Ubuntu</span>
+              <strong>Gajim</strong>
+              <small>Connexion et échanges de messages</small>
+            </div>
+          </div>
+
+          <img
+            class="modal-image"
+            src="assets/projects/openfire-architecture.png"
+            alt="Schéma réel de l’architecture Openfire et OpenLDAP"
+          />
+        </section>
+
+        <section class="modal-block">
+          <h3>Réalisation</h3>
+          <div class="step-grid">
+            <div><b>01</b><span>Configuration réseau du serveur Ubuntu</span></div>
+            <div><b>02</b><span>Installation et configuration d’OpenLDAP</span></div>
+            <div><b>03</b><span>Création des comptes utilisateurs LDAP</span></div>
+            <div><b>04</b><span>Installation du serveur Openfire</span></div>
+            <div><b>05</b><span>Intégration d’Openfire à l’annuaire LDAP</span></div>
+            <div><b>06</b><span>Configuration de Gajim et tests de messagerie</span></div>
+          </div>
+        </section>
+
+        <section class="modal-block result-block">
+          <div>
+            <span class="result-label">Résultat</span>
+            <h3>Authentification et communication validées</h3>
+            <p>
+              Les comptes utilisateurs présents dans l’annuaire ont été utilisés
+              pour se connecter au service XMPP, puis des échanges de messages
+              ont été réalisés entre les clients.
+            </p>
+          </div>
+
+          <img
+            src="assets/projects/openfire-test-gajim.png"
+            alt="Test final des échanges de messages dans Gajim"
+          />
+        </section>
+
+        <section class="modal-block">
+          <h3>Technologies</h3>
+          <div class="project-stack large">
+            <span>Ubuntu 22.04</span>
+            <span>OpenLDAP</span>
+            <span>LDAP / LDIF</span>
+            <span>Openfire</span>
+            <span>XMPP</span>
+            <span>Gajim</span>
+            <span>Netplan</span>
+          </div>
+        </section>
+
+      </div>
+    </article>
+  </div>
+
+
+  <!-- ===================== MODAL DHCP ===================== -->
+  <div class="project-modal" id="modal-dhcp" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="dhcp-title">
+      <button class="modal-close" data-close-modal aria-label="Fermer">×</button>
+
+      <div class="modal-head">
+        <span class="project-category">Services Réseaux</span>
+        <h2 id="dhcp-title">Serveur DHCP & DHCP Relay</h2>
+        <p>
+          Attribution automatique d’adresses IP à un client situé dans un
+          sous-réseau différent de celui du serveur DHCP.
+        </p>
+      </div>
+
+      <div class="modal-content">
+
+        <section class="modal-block">
+          <h3>Problématique</h3>
+          <p>
+            Les requêtes DHCP sont initialement diffusées en broadcast et ne
+            traversent pas naturellement plusieurs sous-réseaux. L’objectif était
+            donc d’utiliser un relais DHCP pour transférer les requêtes du client
+            vers un serveur central.
+          </p>
+        </section>
+
+        <section class="modal-block">
+          <h3>Architecture</h3>
+
+          <div class="architecture-flow">
+            <div class="arch-node">
+              <span>LAN 1</span>
+              <strong>Client DHCP</strong>
+              <small>192.168.20.0/24</small>
+            </div>
+
+            <div class="arch-arrow">→</div>
+
+            <div class="arch-node">
+              <span>VM intermédiaire</span>
+              <strong>DHCP Relay</strong>
+              <small>Relais entre les deux réseaux</small>
+            </div>
+
+            <div class="arch-arrow">→</div>
+
+            <div class="arch-node">
+              <span>LAN 2</span>
+              <strong>Serveur DHCP</strong>
+              <small>192.168.10.0/24</small>
+            </div>
+          </div>
+
+          <img
+            class="modal-image"
+            src="assets/projects/dhcp-architecture.jpg"
+            alt="Schéma réel du projet DHCP Relay"
+          />
+        </section>
+
+        <section class="modal-block">
+          <h3>Réalisation</h3>
+          <div class="step-grid">
+            <div><b>01</b><span>Création de trois machines virtuelles</span></div>
+            <div><b>02</b><span>Configuration du serveur ISC DHCP</span></div>
+            <div><b>03</b><span>Définition des sous-réseaux et plages DHCP</span></div>
+            <div><b>04</b><span>Configuration de isc-dhcp-relay</span></div>
+            <div><b>05</b><span>Gestion du champ giaddr et des interfaces</span></div>
+            <div><b>06</b><span>Validation des échanges et de l’adresse obtenue</span></div>
+          </div>
+        </section>
+
+        <section class="modal-block result-block">
+          <div>
+            <span class="result-label">Résultat</span>
+            <h3>Attribution distante d’adresse IP validée</h3>
+            <p>
+              Le client situé sur le réseau 192.168.20.0/24 reçoit sa configuration
+              depuis le serveur DHCP situé sur le réseau 192.168.10.0/24 grâce au
+              relais intermédiaire.
+            </p>
+          </div>
+
+          <img
+            src="assets/projects/dhcp-validation.jpg"
+            alt="Validation du fonctionnement DHCP sur le client"
+          />
+        </section>
+
+        <section class="modal-block">
+          <h3>Technologies</h3>
+          <div class="project-stack large">
+            <span>Ubuntu</span>
+            <span>ISC DHCP Server</span>
+            <span>isc-dhcp-relay</span>
+            <span>IPv4</span>
+            <span>Subnetting</span>
+            <span>tcpdump</span>
+            <span>VirtualBox</span>
+          </div>
+        </section>
+
+      </div>
+    </article>
+  </div>
+
+
+
+
+  <!-- ===================== MODAL MPLS ===================== -->
+  <div class="project-modal" id="modal-mpls" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="mpls-title">
+      <button class="modal-close" data-close-modal aria-label="Fermer">×</button>
+      <div class="modal-head">
+        <span class="project-category">Réseaux opérateurs & MPLS</span>
+        <h2 id="mpls-title">VPN MPLS Hub-and-Spoke & accès Internet centralisé</h2>
+        <p>Conception et configuration d’une architecture IP/MPLS reliant un siège et deux agences.</p>
+      </div>
+
+      <div class="modal-content">
+        <section class="modal-block">
+          <h3>Contexte & objectif</h3>
+          <p>
+            Interconnecter le siège d’Indépendance avec les agences de Tamba et Kaolack
+            à travers une infrastructure opérateur MPLS. Le VPN est de type Hub-and-Spoke :
+            les agences communiquent avec le siège, tandis que l’accès Internet est centralisé au siège.
+          </p>
+        </section>
+
+        <section class="modal-block">
+          <h3>Architecture</h3>
+          <div class="architecture-flow">
+            <div class="arch-node"><span>Agence</span><strong>Tamba</strong><small>LAN 10.3.3.0/24</small></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span>Backbone opérateur</span><strong>IP / MPLS</strong><small>OSPF · LDP · VPN L3 · MP-BGP</small></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span>Hub</span><strong>Siège Indépendance</strong><small>LAN 10.1.1.0/24 · sortie Internet</small></div>
+          </div>
+          <img class="modal-image" src="assets/projects/mpls-architecture.png" alt="Topologie réelle du projet MPLS" />
+        </section>
+
+        <section class="modal-block">
+          <h3>Réalisation</h3>
+          <div class="step-grid">
+            <div><b>01</b><span>Plan d’adressage du backbone et des LAN</span></div>
+            <div><b>02</b><span>Routage OSPF dans le cœur opérateur</span></div>
+            <div><b>03</b><span>Activation MPLS et distribution des labels via LDP</span></div>
+            <div><b>04</b><span>Création des instances VPN / VRF</span></div>
+            <div><b>05</b><span>Propagation des routes VPN avec MP-BGP</span></div>
+            <div><b>06</b><span>Accès Internet centralisé et traduction NAT</span></div>
+          </div>
+        </section>
+
+        <section class="modal-block result-block">
+          <div>
+            <span class="result-label">Validation</span>
+            <h3>VPN L3 et routage inter-sites opérationnels</h3>
+            <p>
+              Les tests confirment la connectivité entre les agences et le siège,
+              l’isolation Hub-and-Spoke et la propagation correcte des routes VPN.
+              L’accès Internet des agences est réalisé via le siège.
+            </p>
+          </div>
+          <img src="assets/projects/mpls-routing-table.png" alt="Table de routage VPN MPLS" />
+        </section>
+
+        <section class="modal-block">
+          <h3>Technologies</h3>
+          <div class="project-stack large">
+            <span>OSPF</span><span>MPLS</span><span>LDP</span><span>VPN L3</span>
+            <span>VRF</span><span>MP-BGP</span><span>BGP</span><span>NAT</span>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+
+
+  <!-- ===================== MODAL SIP ===================== -->
+  <div class="project-modal" id="modal-sip" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="sip-title">
+      <button class="modal-close" data-close-modal aria-label="Fermer">×</button>
+      <div class="modal-head">
+        <span class="project-category">Cybersécurité VoIP</span>
+        <h2 id="sip-title">Détection & réponse aux attaques SIP</h2>
+        <p>Architecture expérimentale combinant simulation d’attaque, détection, corrélation et réaction automatique.</p>
+      </div>
+
+      <div class="modal-content">
+        <section class="modal-block">
+          <h3>Problématique</h3>
+          <p>
+            Étudier comment détecter et traiter des scans et tentatives de brute force
+            visant un serveur VoIP Asterisk exposant le service SIP.
+          </p>
+        </section>
+
+        <section class="modal-block">
+          <h3>Architecture</h3>
+          <div class="architecture-flow">
+            <div class="arch-node"><span>Attaquant</span><strong>Kali Linux</strong><small>SIPVicious : svmap / svcrack</small></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span>Cible</span><strong>Asterisk</strong><small>IPBX · SIP 5060 · logs</small></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span>Détection</span><strong>Wazuh</strong><small>Analyse · alertes · Grafana</small></div>
+          </div>
+          <img class="modal-image" src="assets/projects/sip-architecture.png" alt="Architecture de détection et réponse SIP" />
+        </section>
+
+        <section class="modal-block">
+          <h3>Réalisation</h3>
+          <div class="step-grid">
+            <div><b>01</b><span>Déploiement du serveur VoIP Asterisk</span></div>
+            <div><b>02</b><span>Scan SIP avec SIPVicious / svmap</span></div>
+            <div><b>03</b><span>Simulation de brute force avec svcrack</span></div>
+            <div><b>04</b><span>Collecte et corrélation des logs avec Wazuh</span></div>
+            <div><b>05</b><span>Réaction automatique via Fail2ban</span></div>
+            <div><b>06</b><span>Visualisation des événements dans Grafana</span></div>
+          </div>
+        </section>
+
+        <section class="modal-block result-block">
+          <div>
+            <span class="result-label">Résultat</span>
+            <h3>Attaque détectée sans compromission du compte testé</h3>
+            <p>
+              Le brute force simulé n’a pas trouvé de mot de passe valide.
+              Wazuh a toutefois corrélé les échecs d’authentification et généré
+              une alerte de niveau élevé, démontrant la détection des tentatives répétées.
+            </p>
+          </div>
+          <img src="assets/projects/sip-wazuh-alert.png" alt="Alerte Wazuh associée à l’attaque SIP" />
+        </section>
+
+        <section class="modal-block">
+          <h3>Technologies</h3>
+          <div class="project-stack large">
+            <span>Asterisk</span><span>SIP</span><span>Kali Linux</span><span>SIPVicious</span>
+            <span>Wazuh</span><span>Fail2ban</span><span>Grafana</span>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+
+
+  <!-- ===================== MODAL GETVPN ===================== -->
+  <div class="project-modal" id="modal-getvpn" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="getvpn-title">
+      <button class="modal-close" data-close-modal aria-label="Fermer">×</button>
+      <div class="modal-head">
+        <span class="project-category">Sécurité des réseaux</span>
+        <h2 id="getvpn-title">Sécurisation inter-sites avec GETVPN</h2>
+        <p>Protection d’un réseau d’entreprise multi-sites par chiffrement de groupe sans tunnels point-à-point.</p>
+      </div>
+
+      <div class="modal-content">
+        <section class="modal-block">
+          <h3>Objectif</h3>
+          <p>
+            Sécuriser les communications entre un siège à Dakar et des agences
+            distantes à travers un WAN partagé, tout en préservant le routage
+            et les adresses IP d’origine.
+          </p>
+        </section>
+
+        <section class="modal-block">
+          <h3>Principe d’architecture</h3>
+          <div class="architecture-flow">
+            <div class="arch-node"><span>Contrôle</span><strong>Key Server</strong><small>Authentification · TEK · KEK · Rekey</small></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span>Groupe</span><strong>Group Members</strong><small>Chiffrement / déchiffrement IPsec</small></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span>Transport</span><strong>WAN / MPLS</strong><small>Routage transparent · Header Preservation</small></div>
+          </div>
+          <img class="modal-image" src="assets/projects/getvpn-lab.png" alt="Maquette pratique GETVPN" />
+        </section>
+
+        <section class="modal-block">
+          <h3>Réalisation</h3>
+          <div class="step-grid">
+            <div><b>01</b><span>Connectivité IP et routage OSPF</span></div>
+            <div><b>02</b><span>Configuration ISAKMP / IKE</span></div>
+            <div><b>03</b><span>Transform-set et profil IPsec</span></div>
+            <div><b>04</b><span>Configuration du groupe GDOI et du rekey</span></div>
+            <div><b>05</b><span>Enregistrement des Group Members</span></div>
+            <div><b>06</b><span>Validation du chiffrement par analyse Wireshark</span></div>
+          </div>
+        </section>
+
+        <section class="modal-block result-block">
+          <div>
+            <span class="result-label">Validation</span>
+            <h3>Trafic inter-sites protégé par ESP</h3>
+            <p>
+              L’analyse des paquets confirme que le trafic est chiffré par ESP
+              tout en conservant les adresses IP source et destination,
+              ce qui maintient la transparence du routage.
+            </p>
+          </div>
+          <img src="assets/projects/getvpn-wireshark.png" alt="Analyse Wireshark du trafic GETVPN" />
+        </section>
+
+        <section class="modal-block">
+          <h3>Technologies</h3>
+          <div class="project-stack large">
+            <span>GETVPN</span><span>IPsec</span><span>ESP</span><span>GDOI</span>
+            <span>ISAKMP / IKE</span><span>OSPF</span><span>Wireshark</span>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+
+
+  <!-- ===================== MODAL AWS ===================== -->
+  <div class="project-modal" id="modal-aws" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="aws-title">
+      <button class="modal-close" data-close-modal aria-label="Fermer">×</button>
+      <div class="modal-head">
+        <span class="project-category">Cloud Computing</span>
+        <h2 id="aws-title">Architecture Cloud AWS - SmartSchool</h2>
+        <p>Construction d’une architecture réseau et applicative segmentée dans AWS Academy.</p>
+      </div>
+
+      <div class="modal-content">
+        <section class="modal-block">
+          <h3>Architecture mise en place</h3>
+          <p>
+            Le projet repose sur une VPC personnalisée comprenant un subnet public
+            et un subnet privé, une Internet Gateway, des tables de routage,
+            un serveur web EC2 et une base de données RDS déployée dans la partie privée.
+          </p>
+          <img class="modal-image" src="assets/projects/aws-architecture.png" alt="Architecture AWS SmartSchool" />
+        </section>
+
+        <section class="modal-block">
+          <h3>Réalisation</h3>
+          <div class="step-grid">
+            <div><b>01</b><span>Création de la VPC et des deux subnets</span></div>
+            <div><b>02</b><span>Internet Gateway et tables de routage</span></div>
+            <div><b>03</b><span>Déploiement d’une instance EC2 pour le serveur web</span></div>
+            <div><b>04</b><span>Déploiement RDS dans le subnet privé</span></div>
+            <div><b>05</b><span>Configuration des Security Groups et accès EC2 → RDS</span></div>
+            <div><b>06</b><span>Utilisation de S3 et du rôle IAM disponible dans AWS Academy</span></div>
+          </div>
+        </section>
+
+        <section class="modal-block result-block">
+          <div>
+            <span class="result-label">Résultat</span>
+            <h3>Architecture web segmentée et fonctionnelle</h3>
+            <p>
+              Le serveur web est exposé via le subnet public tandis que la base
+              RDS reste dans le réseau privé. Le projet applique une séparation
+              réseau et des règles d’accès entre les composants.
+            </p>
+          </div>
+          <img src="assets/projects/aws-rds.png" alt="Configuration RDS du projet AWS" />
+        </section>
+
+        <section class="modal-block">
+          <h3>Technologies</h3>
+          <div class="project-stack large">
+            <span>AWS VPC</span><span>EC2</span><span>RDS</span><span>Internet Gateway</span>
+            <span>Route Tables</span><span>Security Groups</span><span>S3</span><span>IAM</span>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+
+
+  <!-- ===================== MODAL HLS ===================== -->
+  <div class="project-modal" id="modal-hls" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="hls-title">
+      <button class="modal-close" data-close-modal aria-label="Fermer">×</button>
+      <div class="modal-head">
+        <span class="project-category">Multimédia sur IP</span>
+        <h2 id="hls-title">Streaming adaptatif HTTP Live Streaming</h2>
+        <p>Mise en œuvre d’une chaîne de diffusion HLS et analyse des échanges réseau générés.</p>
+      </div>
+
+      <div class="modal-content">
+        <section class="modal-block">
+          <h3>Objectif</h3>
+          <p>
+            Générer plusieurs qualités d’une vidéo, créer les segments HLS et les
+            manifestes, lire le flux depuis un poste client puis observer les
+            requêtes HTTP avec Wireshark.
+          </p>
+        </section>
+
+        <section class="modal-block">
+          <h3>Chaîne de traitement</h3>
+          <div class="architecture-flow">
+            <div class="arch-node"><span>Source</span><strong>Vidéo MP4</strong><small>Fichier source sous Linux</small></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span>Traitement</span><strong>FFmpeg</strong><small>1080p · 720p · 480p · 240p</small></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span>Diffusion</span><strong>HLS / HTTP</strong><small>.m3u8 + segments .ts</small></div>
+          </div>
+          <img class="modal-image" src="assets/projects/hls-playback.png" alt="Lecture du flux HLS" />
+        </section>
+
+        <section class="modal-block">
+          <h3>Réalisation</h3>
+          <div class="step-grid">
+            <div><b>01</b><span>Préparation de la VM Ubuntu</span></div>
+            <div><b>02</b><span>Encodage H.264 avec plusieurs résolutions et débits</span></div>
+            <div><b>03</b><span>Segmentation du contenu en fichiers .ts</span></div>
+            <div><b>04</b><span>Création des manifestes .m3u8</span></div>
+            <div><b>05</b><span>Lecture du flux depuis un poste Windows</span></div>
+            <div><b>06</b><span>Analyse des requêtes HTTP dans Wireshark</span></div>
+          </div>
+        </section>
+
+        <section class="modal-block result-block">
+          <div>
+            <span class="result-label">Validation</span>
+            <h3>Flux HLS diffusé et échanges HTTP observés</h3>
+            <p>
+              La lecture permet de valider la chaîne de diffusion.
+              Wireshark met en évidence les requêtes vers le manifeste .m3u8
+              puis les téléchargements successifs des segments vidéo .ts.
+            </p>
+          </div>
+          <img src="assets/projects/hls-wireshark.png" alt="Analyse Wireshark du streaming HLS" />
+        </section>
+
+        <section class="modal-block">
+          <h3>Technologies</h3>
+          <div class="project-stack large">
+            <span>Ubuntu</span><span>FFmpeg</span><span>H.264</span><span>HLS</span>
+            <span>HTTP</span><span>.m3u8</span><span>.ts</span><span>Wireshark</span>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+
+
+  <!-- ===================== MODAL VOIP / TOIP ===================== -->
+  <div class="project-modal" id="modal-voiptoip" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="voiptoip-title">
+      <button class="modal-close" data-close-modal aria-label="Fermer">×</button>
+
+      <div class="modal-head">
+        <span class="project-category">VoIP / ToIP & Qualité de Service</span>
+        <h2 id="voiptoip-title">Architecture VoIP/ToIP, QoS & interopérabilité Asterisk</h2>
+        <p>
+          Configuration de services ToIP, analyse des performances RTP
+          et interconnexion de plusieurs environnements de téléphonie IP.
+        </p>
+      </div>
+
+      <div class="modal-content">
+
+        <section class="modal-block">
+          <h3>Vue d'ensemble</h3>
+          <p>
+            Le projet combine trois volets : services ToIP avancés, analyse expérimentale
+            de la QoS et interconnexion multi-protocoles autour d'Asterisk.
+          </p>
+
+          <div class="architecture-flow">
+            <div class="arch-node">
+              <span>Services ToIP</span>
+              <strong>Asterisk</strong>
+              <small>Appels vidéo - Call Pickup - Hotline - CDR - Trunks</small>
+            </div>
+
+            <div class="arch-arrow">→</div>
+
+            <div class="arch-node">
+              <span>Flux médias</span>
+              <strong>RTP & QoS</strong>
+              <small>Bande passante - Gigue - Latence - Pertes - Codecs</small>
+            </div>
+
+            <div class="arch-arrow">→</div>
+
+            <div class="arch-node">
+              <span>Interopérabilité</span>
+              <strong>Cisco / Asterisk</strong>
+              <small>SIP - PJSIP - IAX - SCCP - UC560</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="modal-block">
+          <h3>1. Services ToIP avancés</h3>
+
+          <div class="step-grid">
+            <div><b>01</b><span>Configuration et test des appels vidéo</span></div>
+            <div><b>02</b><span>Mise en place du Call Pickup</span></div>
+            <div><b>03</b><span>Configuration d'une Hotline automatique</span></div>
+            <div><b>04</b><span>Collecte et affichage des statistiques CDR</span></div>
+            <div><b>05</b><span>Automatisation avec Python, MySQL et systemd</span></div>
+            <div><b>06</b><span>Partage de charge : 40% IAX et 60% SIP</span></div>
+          </div>
+
+          <img class="modal-image"
+               src="assets/projects/voip-toip-cdr-web.png"
+               alt="Statistiques CDR du projet VoIP ToIP" />
+        </section>
+
+        <section class="modal-block">
+          <h3>2. Analyse QoS des flux RTP</h3>
+
+          <p>
+            Analyse des communications en Wi-Fi et Ethernet en faisant varier les codecs
+            et le temps de paquétisation. Les mesures portent sur la bande passante,
+            la gigue, la latence et les pertes de paquets.
+          </p>
+
+          <div class="project-stack large">
+            <span>G.711</span><span>GSM</span><span>AMR</span><span>iLBC</span><span>Speex</span>
+            <span>H.263</span><span>H.264</span><span>VP8</span><span>VP9</span><span>Wireshark</span>
+          </div>
+        </section>
+
+        <section class="modal-block">
+          <h3>3. Interconnexion & signalisation</h3>
+
+          <p>
+            Interconnexion de plusieurs serveurs Asterisk à travers un routeur Cisco,
+            intégration avec un Call Manager UC560 et validation des appels entre
+            abonnés utilisant plusieurs protocoles de signalisation.
+          </p>
+
+          <img class="modal-image"
+               src="assets/projects/voip-toip-architecture.png"
+               alt="Architecture d'interconnexion du projet VoIP ToIP" />
+
+          <div class="project-stack large">
+            <span>SIP</span><span>PJSIP</span><span>IAX</span><span>SCCP</span>
+            <span>Asterisk</span><span>Cisco</span><span>UC560</span><span>Wireshark</span>
+          </div>
+        </section>
+
+        <section class="modal-block result-block">
+          <div>
+            <span class="result-label">Résultat</span>
+            <h3>Architecture ToIP configurée, analysée et testée</h3>
+
+            <p>
+              Les services avancés ont été validés, les flux RTP ont été analysés
+              sous différentes conditions réseau et des communications ont été
+              réalisées entre environnements SIP, PJSIP, IAX et SCCP.
+            </p>
+          </div>
+
+          <img src="assets/projects/voip-toip-call-result.jpg"
+               alt="Validation d'un appel inter-protocoles VoIP ToIP" />
+        </section>
+
+        <section class="modal-block">
+          <h3>Technologies</h3>
+
+          <div class="project-stack large">
+            <span>Asterisk</span><span>Linux</span><span>SIP</span><span>PJSIP</span>
+            <span>IAX</span><span>SCCP</span><span>RTP</span><span>QoS</span>
+            <span>Wireshark</span><span>MicroSIP</span><span>MySQL</span>
+            <span>Python</span><span>PHP</span><span>systemd</span><span>Cisco UC560</span>
+          </div>
+        </section>
+
+      </div>
+    </article>
+  </div>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
