@@ -4,20 +4,22 @@
    ========================================================= */
 
 :root {
-  --bg: #f5f3ec;
-  --bg-soft: #ebe8df;
-  --card: #ffffff;
-  --card-2: #f2f0e8;
-  --border: rgba(32, 69, 62, 0.14);
+  --bg: #FFFFFF;
+  --bg-soft: #F4F6F8;
+  --card: #FFFFFF;
+  --card-2: #F4F6F8;
+  --border: rgba(31, 58, 95, 0.14);
 
-  --text: #1f2a27;
-  --muted: #68736f;
-  --blue: #0f766e;
-  --blue-2: #0b5f59;
-  --cyan: #b66a2c;
-  --orange: #d97745;
+  --text: #1F2937;
+  --muted: #667085;
 
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  --blue: #1F3A5F;
+  --blue-2: #1F3A5F;
+
+  --cyan: #F28C28;
+  --orange: #F28C28;
+
+  --shadow: 0 24px 80px rgba(31, 58, 95, 0.12);
   --radius: 24px;
   --header-h: 78px;
 }
