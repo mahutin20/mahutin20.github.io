@@ -313,7 +313,10 @@ const translationsEN = {
 
   "Multimédia sur IP":
     "Multimedia over IP",
-
+  
+"Génération, diffusion et analyse réseau d’un flux vidéo HLS adaptatif.":
+  "Generation, delivery and network analysis of an adaptive HLS video stream.",
+  
   "VoIP / ToIP & Qualité de Service":
     "VoIP / ToIP & Quality of Service",
 
